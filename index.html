@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MongoDB RAG Knowledge Page</title>
+  <style>
+    /* Reset some defaults */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #4DB33D; /* MongoDB green */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #4DB33D;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .highlight {
+      background-color: #e2f0d9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MongoDB RAG Knowledge Page</h1>
+  </header>
+
+  <main>
+    <h2>What is MongoDB RAG?</h2>
+    <p>
+      <span class="highlight">RAG</span> stands for Retrieval-Augmented Generation. 
+      It is a technique that combines a database like MongoDB with AI models to provide
+      responses based on your stored knowledge or documents.
+    </p>
+
+    <h2>How it Works</h2>
+    <p>
+      In MongoDB RAG, your data is usually vectorized and stored in MongoDB collections.
+      When a query is made, the AI model retrieves relevant documents from MongoDB 
+      and generates an answer using those documents.
+    </p>
+
+    <h2>Why Use MongoDB?</h2>
+    <p>
+      MongoDB is flexible and scalable, making it ideal for storing vector embeddings and 
+      metadata. It works well for building knowledge bases for AI-driven applications.
+    </p>
+
+    <h2>Key Points</h2>
+    <ul>
+      <li>Store your embeddings as arrays of floats in MongoDB.</li>
+      <li>Use a vector search library or plugin for similarity search.</li>
+      <li>Combine retrieval with generative AI for better answers.</li>
+    </ul>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name
+  </footer>
+</body>
+</html>
